@@ -1,13 +1,173 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  background-color: rgb(35, 54, 156);
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#smile {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  right: 1vw;
+  top: 1vw;
+  width: 3vw;
+  height: 3vw;
+  font-size: 2vw;
+  background-color: rgb(255, 217, 1);
+  border-radius: 20%;
 }
+#drum-machine {
+  background-color: #d6d6d6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 10vh;
+  width: 70vw;
+  height: 48vw;
+  border: 5px solid black;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+}
+
+#dm-display {
+  width: 33vw;
+  height: auto;
+  margin-left: 1vw;
+}
+
+#btn-container {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  width: 32vw;
+  height: 32vw;
+  grid-gap: 1vw;
+  margin-left: 1vw;
+}
+
+.drum-pad {
+  color: #d6d6d6;
+  background-color: rgb(10, 9, 9);
+  border-radius: 4%;
+}
+
+#one, #four {
+  box-shadow: 3px 3px 5px rgb(0, 255, 55);
+}
+#two {
+  box-shadow: 3px 3px 5px rgb(255, 0, 157);
+}
+#three {
+  box-shadow: 3px 3px 5px rgb(0, 81, 255);
+}
+#five {
+  box-shadow: 3px 3px 5px rgb(193, 56, 235);
+}
+#six {
+  box-shadow: 3px 3px 5px rgb(255, 0, 0);
+}
+#seven {
+  box-shadow: 3px 3px 5px rgb(255, 251, 0);
+}
+#eight, #nine {
+  box-shadow: 3px 3px 5px rgb(0, 247, 255);
+}
+
+
+#display-container, #bd-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+#display, #song-display {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 3vw;
+  font-family: "VT323", monospace;
+  color: rgb(39, 214, 39);
+  border: 3px solid black;
+  height: 8vw;
+  width: 70%;
+  background-color: rgba(24, 23, 23, 0.479);
+  border-radius: 3%;
+}
+
+#beats-controls {
+  /* border: 2px solid black; */
+  height: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#banks-container {
+  width: 12vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bank-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(202, 202, 202);
+  border-radius: 8%;
+  height: 5vw;
+  width: 5vw;
+  font-size: 1vw;
+}
+
+#next-song, #prev-song, #play-button, #stop-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(202, 202, 202);
+  border-radius: 8%;
+  height: 4vw;
+  width: 4vw;
+  font-size: 1vw;
+}
+
+
+#beats-volume, #songs-volume {
+  width: 16vw;
+}
+
+#knobs-container {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.knob {
+  height: 8vw;
+}
+#song-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+@media (max-width: 650px) {
+  #next-song, #prev-song, #play-button, #stop-button {
+  height: 4vw;
+  width: 4vw;
+  font-size: .7vw;
+}
+.bank-btn {
+  font-size: .75vw;
+}
+}
+
