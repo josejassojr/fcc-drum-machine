@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fcc-drum-machine/static/css/main.d2ae76f7.chunk.css",
+    "main.js": "/fcc-drum-machine/static/js/main.9afbe3e5.chunk.js",
+    "main.js.map": "/fcc-drum-machine/static/js/main.9afbe3e5.chunk.js.map",
+    "runtime-main.js": "/fcc-drum-machine/static/js/runtime-main.da89cc53.js",
+    "runtime-main.js.map": "/fcc-drum-machine/static/js/runtime-main.da89cc53.js.map",
+    "static/js/2.aea033cc.chunk.js": "/fcc-drum-machine/static/js/2.aea033cc.chunk.js",
+    "static/js/2.aea033cc.chunk.js.map": "/fcc-drum-machine/static/js/2.aea033cc.chunk.js.map",
+    "static/js/3.5ebc6dae.chunk.js": "/fcc-drum-machine/static/js/3.5ebc6dae.chunk.js",
+    "static/js/3.5ebc6dae.chunk.js.map": "/fcc-drum-machine/static/js/3.5ebc6dae.chunk.js.map",
+    "index.html": "/fcc-drum-machine/index.html",
+    "static/css/main.d2ae76f7.chunk.css.map": "/fcc-drum-machine/static/css/main.d2ae76f7.chunk.css.map",
+    "static/js/2.aea033cc.chunk.js.LICENSE.txt": "/fcc-drum-machine/static/js/2.aea033cc.chunk.js.LICENSE.txt",
+    "static/media/dial-knob2.e7dba7bc.png": "/fcc-drum-machine/static/media/dial-knob2.e7dba7bc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da89cc53.js",
+    "static/js/2.aea033cc.chunk.js",
+    "static/css/main.d2ae76f7.chunk.css",
+    "static/js/main.9afbe3e5.chunk.js"
+  ]
+}
