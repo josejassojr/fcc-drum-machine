@@ -1,6 +1,6 @@
 # Jose Jasso Jr. | Drum Machine
 
-An application used while studying or other tasks to time your tasks and breaks in between.
+A drum machine application for fun! Play beats over music!
 
 ## Techs Used
 
