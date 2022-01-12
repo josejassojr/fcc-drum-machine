@@ -4,6 +4,7 @@ import AUDIO_NAMES from "./audio_names";
 import SONGS from "./songs";
 import display from "./waveform_display.png";
 import knob from "./dial-knob2.png";
+import Footer from "./Footer/Footer.js";
 
 const numSongs = SONGS.length;
 
@@ -17,7 +18,7 @@ class App extends Component {
       volumeSongs: 0.5,
       bank: 1,
       songInd: 0,
-      smile: false
+      smile: false,
     };
 
     this.playAudio = this.playAudio.bind(this);
@@ -85,13 +86,13 @@ class App extends Component {
     var ret = elem.getAttribute("name");
     console.log(elem);
     this.setState({
-      display: ret
+      display: ret,
     });
   }
 
   changeVolumeBtns(event) {
     this.setState({
-      volumeBtns: event.target.value
+      volumeBtns: event.target.value,
     });
   }
 
@@ -124,7 +125,7 @@ class App extends Component {
     }
 
     this.setState({
-      bank: 1
+      bank: 1,
     });
   }
 
@@ -155,7 +156,7 @@ class App extends Component {
         "rgb(202, 202, 202)";
     }
     this.setState({
-      bank: 2
+      bank: 2,
     });
   }
 
@@ -163,12 +164,12 @@ class App extends Component {
     this.stopSong();
     if (this.state.songInd == numSongs - 1) {
       this.setState({
-        songInd: 0
+        songInd: 0,
       });
     } else {
       let x = this.state.songInd;
       this.setState({
-        songInd: x + 1
+        songInd: x + 1,
       });
     }
   }
@@ -177,12 +178,12 @@ class App extends Component {
     this.stopSong();
     if (this.state.songInd == 0) {
       this.setState({
-        songInd: numSongs - 1
+        songInd: numSongs - 1,
       });
     } else {
       let x = this.state.songInd;
       this.setState({
-        songInd: x - 1
+        songInd: x - 1,
       });
     }
   }
@@ -212,14 +213,14 @@ class App extends Component {
   changeVolumeSongs(event) {
     const VOL = event.target.value;
     this.setState({
-      volumeSongs: VOL
+      volumeSongs: VOL,
     });
     document.getElementById("beat").volume = VOL;
   }
 
   smile() {
     this.setState({
-      smile: true
+      smile: true,
     });
     document.documentElement.style.backgroundColor = "rgb(8, 177, 255";
     document.getElementById("drum-machine").style.backgroundColor = "orange";
@@ -227,12 +228,12 @@ class App extends Component {
     document.getElementById("song-display").style.color = "black";
     document.getElementById("display").style.backgroundColor = "#07f840";
     document.getElementById("song-display").style.backgroundColor = "#07f840";
-    document.getElementsByClassName("drum-pad").forEach(element => {
+    document.getElementsByClassName("drum-pad").forEach((element) => {
       element.style.backgroundColor = "yellow";
       element.style.color = "yellow";
       element.style.boxShadow = "3px 3px 5px rgb(255, 0, 157)";
     });
-    document.getElementsByClassName("bank-btn").forEach(element => {
+    document.getElementsByClassName("bank-btn").forEach((element) => {
       element.style.backgroundColor = "#00f6ff";
     });
     document.getElementById("next-song").style.backgroundColor = "#ff001a";
@@ -427,6 +428,7 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
